@@ -1,0 +1,14 @@
+server:
+  port: 8081
+spring:
+  jpa:
+    plattform: org.hibernate.dialect.MySQL57Dialect
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+security:
+  jwt:
+    token:
+      secret-key: secreto
+      expire-length: 36000000
